@@ -15,14 +15,15 @@ module.exports = {
             },
             {
                 test:/\.(png|jpg|gif)$/,
-                loader:'file?name=[name].[ext]?[hash]'
+                loader:'url?limit=8192?name=img/[name].[ext]?[hash]'
             }
         ]
     },
     babel:{
         presets:['es2015','stage-0'],
         plugins:['transform-runtime']
-    }
+    },
+    watch:true
 };
 
 if(process.env.NODE_ENV === 'production'){

@@ -1,14 +1,16 @@
-<style>
+<style scoped>
     .inner{
-        border: 1px solid #094908;
+        border: 1px solid #d8df11;
     }
-    .inner .text{
+    .text{
         color: #008a0c;
     }
 </style>
 
 <template>
+    <h2>compB</h2>
     <div class="inner">
+        <img src="../assets/img/ok.png" alt="">
         付款咖啡机按时打卡发卡上 <span class="text">{{msg}}</span>
     </div>
 </template>
