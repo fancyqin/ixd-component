@@ -1,4 +1,4 @@
-<style>
+<style lang="sass">
     @import "assets/scss/base.scss";
 </style>
 

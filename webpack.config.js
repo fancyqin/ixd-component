@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var plugins = [];
-plugins.push(new ExtractTextPlugin("[name].css"));
+plugins.push(new ExtractTextPlugin('style.css',{disable: false}));
 if(process.env.NODE_ENV === 'production'){
     plugins.push([
         new webpack.DefinePlugin({
@@ -42,17 +42,16 @@ module.exports = {
                 test: /\.js$/,
                 exclude: /node_modules|vue\/dist/,
                 loader: 'babel'
-            },
-            {
-                test:/\.css$/,
-                loader:ExtractTextPlugin.extract('style-loader','css-loader')
-            },{
-                test:/\.scss$/,
-                loader: ExtractTextPlugin.extract('style-loader','css-loader','sass-loader')
             }
         ]
     },
     plugins: plugins,
+    vue:{
+        loaders:{
+            css: ExtractTextPlugin.extract('css'),
+            sass: ExtractTextPlugin.extract('css!sass-loader')
+        }
+    },
     babel:{
         presets:['es2015','stage-0'],
         plugins:['transform-runtime']
