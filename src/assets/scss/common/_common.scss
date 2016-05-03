@@ -1,0 +1,60 @@
+.content {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    bottom: 30px;
+    overflow: auto;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.btn-main {
+    background: #9E7C72;
+    color: #fff;
+    border: 0;
+}
+
+.pager {
+    padding: 20px 0;
+    text-align: center;
+    a {
+        display: inline-block;
+        min-width: 10px;
+        height: 24px;
+        line-height: 24px;
+        border: 1px solid #ccc;
+        text-align: center;
+        padding: 0 7px;
+        color: #666;
+        border-radius: 15px;
+        margin: 0 2px;
+    }
+    a:hover {
+        border: 1px solid #9E7C72;
+        color: #9E7C72;
+    }
+    a.on {
+        color: #fff;
+        background: #9E7C72;
+        border: 1px solid #9E7C72;
+    }
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}

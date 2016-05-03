@@ -1,32 +1,17 @@
-<style scoped>
-    /*$blue: #0b97c4;*/
-    .main{
-        color: #444444;
-        font-size: 20px;
-    }
+<style>
+    @import "assets/scss/base.scss";
 </style>
 
 <template>
-    <div class="main">
-        lalala,WTF with you, {{msg}}
-    </div>
-    <comp-a></comp-a>
-    <comp-b></comp-b>
+    <comp-home></comp-home>
 </template>
 
 <script>
-    import CompA from './components/a.vue'
-    import CompB from './components/b.vue'
+    import CompHome from './views/home.vue'
 
     export default{
-        data(){
-            return{
-                msg:'Slim Shady'
-            }
-        },
         components:{
-            CompA,
-            CompB
+            CompHome,
         }
     }
 </script>
