@@ -1,5 +1,5 @@
 var Vue = require('vue');
-var App = require('./app.vue');
+var App = require('../views/test.vue');
 
 new Vue({
     el:'body',

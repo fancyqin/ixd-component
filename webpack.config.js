@@ -1,8 +1,11 @@
 var webpack = require('webpack');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var path = require('path');
+
+var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
 var plugins = [];
-plugins.push(new ExtractTextPlugin('style.css',{disable: false}));
+plugins.push(new ExtractTextPlugin('css/[name].css',{disable: false}));
 if(process.env.NODE_ENV === 'production'){
     plugins.push([
         new webpack.DefinePlugin({
@@ -20,13 +23,18 @@ if(process.env.NODE_ENV === 'production'){
 } else{
     module.exports.devtool = '#source-map'
 }
-
+plugins.push(new CommonsChunkPlugin({
+    filename:'js/common.js',
+    name:'common'
+}));
 module.exports = {
-    entry:'./src/main.js',
+    entry:{
+        index:'./src/entry/home.js',
+        test:'./src/entry/test.js'
+    },
     output: {
-        path: './dist',
-        publicPath:'dist/',
-        filename: 'bundle.js'
+        path: path.join(__dirname,'dist'),
+        filename: 'js/[name].bundle.js'
     },
     module:{
         loaders:[
