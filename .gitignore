@@ -1,5 +1,4 @@
+.DS_Store
 node_modules/
-.idea/
-*.map
-npm-debug.log
 dist/
+npm-debug.log
