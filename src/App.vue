@@ -1,7 +1,25 @@
+<style lang="scss">
+    body,div{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
 <template>
     <div id="app">
-        <h1>{{ msg }}</h1>
         <i-header></i-header>
+        <div>
+            <div class="sider">
+                <ul>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/form/text">Text</router-link></li>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/">Home</router-link></li>
+                </ul>
+            </div>
+            <router-view></router-view>
+        </div>
+        <i-footer></i-footer>
     </div>
 </template>
 
@@ -10,11 +28,6 @@
     import IFooter from './components/footer.vue'
     export default {
         name: 'app',
-        data () {
-            return {
-                msg: 'Welcome to Your Vue.js App'
-            }
-        },
         components:{
             IHeader,
             IFooter
@@ -22,31 +35,3 @@
     }
 </script>
 
-<style lang="scss">
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-}
-
-h1, h2 {
-    font-weight: normal;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-a {
-    color: #42b983;
-}
-</style>

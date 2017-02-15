@@ -1,23 +1,19 @@
 <style lang="scss">
-    .container{
-        border: 1px solid #0D3349;
+    .header{
+        border-bottom: 1px solid #f00;
     }
 </style>
 
 <template>
-    <h2>compA</h2>
-    <div class="container">
-        哈哈分发发 <span class="text">{{msg}}</span>
+    <div class="header">
+        <h2>I'm the header ,Bitch~</h2>
     </div>
 </template>
 
 
 <script>
     export default{
-        data(){
-            return{
-                msg:'紫紫紫紫色'
-            }
-        }
+        
     }
+
 </script>
