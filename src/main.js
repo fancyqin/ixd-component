@@ -1,6 +1,6 @@
 import Vue from 'vue'
-
 import VueRouter from 'vue-router'
+import $ from 'jQuery'
 
 Vue.use(VueRouter);  
 

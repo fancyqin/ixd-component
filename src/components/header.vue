@@ -1,5 +1,9 @@
 <style lang="scss">
     .header{
+        position: fixed;
+        height: 60px;
+        top: 0;
+        width: 100%;
         border-bottom: 1px solid #f00;
     }
 </style>
@@ -15,5 +19,5 @@
     export default{
         
     }
-
+    document.getElementById('app').className = 'dfef';
 </script>
