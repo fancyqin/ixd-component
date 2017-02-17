@@ -37,9 +37,9 @@
 </template>
 
 <script>
-    import IHeader from './components/header.vue'
-    import IFooter from './components/footer.vue'
-    import ISider from './components/sider.vue'
+    import IHeader from './components/header.vue';
+    import IFooter from './components/footer.vue';
+    import ISider from './components/sider.vue';
 
     export default {
         name: 'app',

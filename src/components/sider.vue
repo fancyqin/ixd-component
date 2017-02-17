@@ -31,15 +31,8 @@
                     <li><router-link to="/form/input-associate">联想文本框</router-link></li>
                     <li><router-link to="/form/textarea">文本域</router-link></li>
                     <li><router-link to="/form/placeholder">暗注释</router-link></li>
-                    <li><router-link to="/form/placeholder">暗注释</router-link></li>
-                    <li><router-link to="/form/placeholder">暗注释</router-link></li>
-                    <li><router-link to="/form/placeholder">暗注释</router-link></li>
-                    <li><router-link to="/form/placeholder">暗注释</router-link></li>
-                    <li><router-link to="/form/placeholder">暗注释</router-link></li>
-                    <li><router-link to="/form/placeholder">暗注释</router-link></li>
                 </ul>
             </li>
-            <li></li>
         </ul>
     </div>
 </template>

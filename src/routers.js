@@ -1,22 +1,11 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router';
-
-Vue.use(VueRouter);
-
 import Home from './ixd/home.vue';
 import FormInput from './ixd/form/input.vue';
 import FormInputAsso from './ixd/form/input-associate.vue';
+import FormTextarea from './ixd/form/textarea.vue';
 
-
-
-
-const router = [
+const routers = [
     {
         path:'/',
-        component: Home
-    },
-    {
-        path:'*',
         component: Home
     },
     {
@@ -26,10 +15,15 @@ const router = [
     {
         path:'/form/input-associate',
         component: FormInputAsso
+    },
+    {
+        path:'/form/textarea',
+        component: FormTextarea
+    },
+    {
+        path:'/form/placeholder',
+        component: resolve => require(['./ixd/form/placeholder.vue'],resolve)
     }
 ];
 
-const routers = new VueRouter({router});
-
-console.log(111);
 export default routers;
