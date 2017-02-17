@@ -22,7 +22,7 @@ const routers = [
     },
     {
         path:'/form/placeholder',
-        component: resolve => require(['./ixd/form/placeholder.vue'],resolve)
+        component: resolve => require(['./ixd/form/placeholder.vue'],resolve)//why once time
     }
 ];
 
