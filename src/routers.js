@@ -1,28 +1,24 @@
-import Home from './ixd/home.vue';
-import FormInput from './ixd/form/input.vue';
-import FormInputAsso from './ixd/form/input-associate.vue';
-import FormTextarea from './ixd/form/textarea.vue';
 
 const routers = [
     {
         path:'/',
-        component: Home
+        component: require('./ixd/home.vue')
     },
     {
         path:'/form/input',
-        component: FormInput
+        component: require('./ixd/form/input.vue')
     },
     {
         path:'/form/input-associate',
-        component: FormInputAsso
+        component: require('./ixd/form/input-associate.vue')
     },
     {
         path:'/form/textarea',
-        component: FormTextarea
+        component: require('./ixd/form/textarea.vue')
     },
     {
         path:'/form/placeholder',
-        component: resolve => require(['./ixd/form/placeholder.vue'],resolve)//why once time
+        component: require('./ixd/form/placeholder.vue')
     }
 ];
 
