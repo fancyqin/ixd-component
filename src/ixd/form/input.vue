@@ -1,6 +1,6 @@
 <template>
     <div class="obelisk obelisk-form">
-		<h2>表单元素 
+		<h2>文本框 
             <div class="trigger-all">展开所有代码
                 <div class="input-toggle">
                     <label class="input-wrap">

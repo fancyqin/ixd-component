@@ -1,4 +1,5 @@
 <style lang="scss">
+    @import './assets/css/demo.css';
     @import './assets/css/ob.scss';
     body,div{
         margin: 0;
@@ -21,6 +22,7 @@
             left: 200px;
             right: 0;
             bottom: 0;
+            overflow-y: auto;
         }
     }
 </style>
