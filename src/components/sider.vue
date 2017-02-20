@@ -6,15 +6,45 @@
         bottom:0;
         float: left;
         width: 200px;
-        border-right: 1px saddlebrown solid;
+        border-right: 1px #ddd solid;
+        background: #fff;
         .list{
             margin: 0;
-            padding: 10px;
+            padding: 20px 0;
             list-style: none;
-            .list-jr{
-                
-                li{
+            font-size: 14px;
+            > li{
+                a{
+                    display: block;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 20px;
+                    text-decoration: none;
+                    color: #333;
                     
+                }
+                .router-link-active{
+                    background: #f3f5f7;
+                }
+                span{
+                    display: block;
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 20px;
+                }
+            }
+            
+            .list-jr{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    a{
+                        padding-left: 40px;
+                    }
+                    .router-link-active{
+                        background: #f3f5f7;
+                    }
                 }
             }
         }

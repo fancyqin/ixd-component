@@ -1,7 +1,9 @@
 <style lang="scss">
+    @import './assets/css/ob.scss';
     body,div{
         margin: 0;
         padding: 0;
+        font: 12px/1.5 'Roboto',Roboto,Arial,'Microsoft Yahei',sans-serif;
     }
     *{
         box-sizing: border-box;

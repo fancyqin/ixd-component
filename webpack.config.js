@@ -35,6 +35,11 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      {
+        test:/\.scss$/,
+        loader:'sass-loader',
+        exclude: /node_modules/
       }
     ]
   },

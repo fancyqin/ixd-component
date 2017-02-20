@@ -4,7 +4,9 @@
         bottom: 0;
         width: 100%;
         height: 30px;
-        border-top: 1px solid #0D3349;
+        line-height: 30px;
+        padding: 0 20px;
+        border-top: 1px solid #ddd;
     }
 </style>
 
